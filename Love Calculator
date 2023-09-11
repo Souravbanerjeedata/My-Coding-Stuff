@@ -1,0 +1,16 @@
+print("Welcome to the Love Calculator!")
+print("Note: If the score is below 11 or over 89, your love is a maya and you should move on!")
+name1 = input("What is your name? \n").lower()
+name2 = input("What is your SONA's/ GULUGULU's name? \n").lower()
+names = name1+name2
+first = names.count("t")+names.count("r")+names.count("u")+names.count("e")
+second = names.count("l")+names.count("o")+names.count("v")+names.count("e")
+total = str(first) + str(second)
+total = int(total)
+
+if total <= 10 or total >= 90:
+    print(f"Your score is {total}, you go together like coke and mentos.")
+elif total >= 40 and total <= 50:
+    print(f"Your score is {total}, you are alright together")
+else:
+    print(f"your score is {total}")
